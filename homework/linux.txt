@@ -1,0 +1,35 @@
+misiekjr@misiekjrLinux:~/workspace/CodersSchool$ cat ZadanieLinux/selected.txt ZadanieLinux/commands.txt 
+331 ZadanieLinux/processes.txt
+root         892  0.0  0.1  43732 21120 ?        Ss   19:35   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1027  0.0  0.1 120724 23424 ?        Ssl  19:35   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+misiekjr    2259  0.0  0.0  42096  6528 ?        S<sl 19:36   0:00 /usr/bin/pipewire
+misiekjr    2260  0.0  0.0  25988  6400 ?        Ssl  19:36   0:00 /usr/bin/pipewire-media-session
+misiekjr    2261  0.3  0.1 2026068 30120 ?       S<sl 19:36   0:28 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+misiekjr    2270  0.0  0.0 243644  7452 ?        Sl   19:36   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+misiekjr    2291  0.0  0.0  10116  5632 ?        Ss   19:36   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+misiekjr    2335  0.0  0.0 165108  6016 tty2     Ssl+ 19:36   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+misiekjr    2487  0.0  0.0   8564  4352 ?        S    19:36   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+misiekjr    2490  1.1  1.9 5192024 307772 ?      Ssl  19:36   1:53 /usr/bin/gnome-shell
+misiekjr    2700  0.0  0.1 2868612 27920 ?       Sl   19:36   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+misiekjr    2718  0.0  0.0   2892  1536 ?        Ss   19:36   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+misiekjr    2722  0.0  0.0 318160 12172 ?        Sl   19:36   0:02 /usr/bin/ibus-daemon --panel disable
+misiekjr    2873  0.0  0.0  39128 11776 ?        Ss   19:36   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+misiekjr    2910  0.0  1.4 1112092 230904 ?      Sl   19:36   0:02 /snap/snap-store/959/usr/bin/snap-store --gapplication-service
+misiekjr    2961  0.0  0.1 429452 30264 ?        Sl   19:36   0:00 /snap/snapd-desktop-integration/253/usr/bin/snapd-desktop-integration
+misiekjr    3104  0.0  0.1 2868608 28368 ?       Sl   19:36   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+misiekjr    3371  0.0  0.5 381884 83432 ?        Sl   19:36   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.QCEK22 -listen 4 -listen 5 -displayfd 6 -initfd 7
+misiekjr    3919  0.0  0.1 1978464 21052 ?       Sl   19:36   0:00 /usr/bin/snap userd
+misiekjr   44801  0.0  0.1  38464 19456 ?        S    20:23   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+misiekjr   44804  0.0  0.1 386488 27652 ?        Sl   20:23   0:00 /usr/bin/gnome-terminal.real --wait
+  230  mkdir ZadanieLinux
+  231  touch ZadanieLinux/processes.txt
+  232  ps aux > ZadanieLinux/processes.txt 
+  233  cp ZadanieLinux/processes.txt ZadanieLinux/copy.txt
+  234  mkdir backup
+  235  cp ZadanieLinux/copy.txt backup/copy.txt
+  236  wc -l ZadanieLinux/processes.txt 
+  237  wc -l > ZadanieLinux/selected.txt
+  238  wc -l ZadanieLinux/processes.txt > ZadanieLinux/selected.txt 
+  239  grep /bin ZadanieLinux/processes.txt >> ZadanieLinux/selected.txt 
+  240  history
+  241  history |tail -n14 > ZadanieLinux/commands.txt
